@@ -88,29 +88,36 @@
         <h1>Reported posts</h1>
       </div>
     </main>
-    <section>
+    <section style="padding: 25px">
       <h3>How does Javascript work?</h3>
       <p>
         Javascript is a programming language which handles a single task at a
         time. It is a client side scripting language. We don't have to compile
         the codes before sending to the browser. The codes passes through
         compiler which makes it machine redable. It is an interpreter language.
+        It runs through javascript engine. Different browser has different
+        engine such as google developed v8, mozila developed spider monkey etc.
       </p>
       <h3>What does javascript event loop do?</h3>
       <p>
-        Javascript event loop executes tasks which is given to it. After
-        completing the loop it become inactive untill next task. It allows to
-        use callbacks and promises. With these callbacks or promisses it is
-        assigned with new tasks.
+        Javascript event loop is an amazing feature. It executes asynchronus
+        tasks which is given to it. After completing the loop it become inactive
+        untill next task. It allows to use callbacks and promises. With these
+        callbacks or promisses it is assigned with new tasks. When Js
+        interpreter recognizes functions like setTimeOut which would take some
+        time to execute, Js interpreter sends them to web api and executes the
+        next lines of the call stack.
       </p>
       <h3>What's the difference between local storage and session storage?</h3>
       <p>
         There are some difference between local storage and session storage.
         They are:- <br />1. The session storage is temporary but local storage
         is permanent. <br />2. The session storage destroys when user close the
-        tab/browser. but the local storage remains even after closing tabs.
+        tab/browser. but the local storage remains until user delete it.
         <br />3. Local storage allows to keep value in the browser for long time
-        where as session storage keeps the value only for one session.
+        where as session storage keeps the value only for one session.<br />
+        4. Using local storage may cause some security issue where using session
+        storage is safe.
       </p>
     </section>
     <footer></footer>
